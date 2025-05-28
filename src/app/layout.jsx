@@ -11,7 +11,7 @@ const rubik = localFont({
 });
 
 export const metadata = {
-  title: "Quizy",
+  title: "Unismuh-quiz",
   description: "Frontend quiz for coconut new member",
 };
 
