@@ -12,7 +12,7 @@ const rubik = localFont({
 
 export const metadata = {
   title: "Unismuh-quiz",
-  description: "Frontend quiz for coconut new member",
+  description: "Kuis ke-muhammadiyaan",
 };
 
 export default function RootLayout({ children }) {
