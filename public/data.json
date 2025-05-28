@@ -1,0 +1,248 @@
+{
+    "quizzes": [
+        {
+            "title": "SEJARAH MUHAMMADIYAH",
+            "icon": "./assets/images/history.svg",
+            "questions": [
+                {
+                    "id": 1,
+                    "question": "Kapan Muhammadiyah didirikan?",
+                    "options": [
+                        "8 Dzulhijjah 1330 H",
+                        "12 Rabiul Awal 1345 H",
+                        "18 November 1912 M",
+                        "1 Syawal 1365 H"
+                    ],
+                    "answer": "8 Dzulhijjah 1330 H"
+                },
+                {
+                    "id": 2,
+                    "question": "Siapa pendiri Muhammadiyah?",
+                    "options": [
+                        "KH Ahmad Dahlan",
+                        "KH Hasyim Asy'ari",
+                        "Buya Hamka",
+                        "KH Abdul Wahid Hasyim"
+                    ],
+                    "answer": "KH Ahmad Dahlan"
+                },
+                {
+                    "id": 3,
+                    "question": "Di kota mana Muhammadiyah pertama kali didirikan?",
+                    "options": [
+                        "Jakarta",
+                        "Surakarta",
+                        "Yogyakarta",
+                        "Makassar"
+                    ],
+                    "answer": "Yogyakarta"
+                },
+                {
+                    "id": 4,
+                    "question": "Apa semboyan resmi Muhammadiyah?",
+                    "options": [
+                        "Bersatu dalam Iman",
+                        "Fastabiqul Khairat",
+                        "Ikhlas Beramal",
+                        "Taqwa, Ilmu, Amal"
+                    ],
+                    "answer": "Fastabiqul Khairat"
+                },
+                {
+                    "id": 5,
+                    "question": "Apa nama organisasi otonom Muhammadiyah untuk mahasiswa?",
+                    "options": [
+                        "Ikatan Mahasiswa Muhammadiyah (IMM)",
+                        "Himpunan Mahasiswa Muhammadiyah (HMM)",
+                        "Korps Mahasiswa Muhammadiyah (KMM)",
+                        "Persatuan Mahasiswa Muhammadiyah (PMM)"
+                    ],
+                    "answer": "Ikatan Mahasiswa Muhammadiyah (IMM)"
+                }
+            ]
+        },
+        {
+            "title": "UNIVERSITAS MUHAMMADIYAH MAKASSAR",
+            "icon": "./assets/images/building.svg",
+            "questions": [
+                {
+                    "id": 1,
+                    "question": "Kapan Universitas Muhammadiyah Makassar didirikan?",
+                    "options": [
+                        "1963",
+                        "1975",
+                        "1985",
+                        "1992"
+                    ],
+                    "answer": "1985"
+                },
+                {
+                    "id": 2,
+                    "question": "Apa warna identitas Universitas Muhammadiyah Makassar?",
+                    "options": [
+                        "Hijau dan Kuning",
+                        "Biru dan Putih",
+                        "Merah dan Hitam",
+                        "Ungu dan Emas"
+                    ],
+                    "answer": "Hijau dan Kuning"
+                },
+                {
+                    "id": 3,
+                    "question": "Fakultas apa saja yang ada di Universitas Muhammadiyah Makassar?",
+                    "options": [
+                        "Fakultas Kedokteran dan Teknik",
+                        "Fakultas Ekonomi dan Hukum",
+                        "Fakultas Keguruan dan Ilmu Pendidikan",
+                        "Semua jawaban benar"
+                    ],
+                    "answer": "Semua jawaban benar"
+                },
+                {
+                    "id": 4,
+                    "question": "Apa visi Universitas Muhammadiyah Makassar?",
+                    "options": [
+                        "Menjadi universitas unggul berbasis Islam",
+                        "Menjadi pusat keunggulan pendidikan tinggi yang islami",
+                        "Menjadi universitas terbaik di Indonesia Timur",
+                        "Menjadi universitas riset berkelas dunia"
+                    ],
+                    "answer": "Menjadi pusat keunggulan pendidikan tinggi yang islami"
+                },
+                {
+                    "id": 5,
+                    "question": "Apa nama rektor Universitas Muhammadiyah Makassar saat ini?",
+                    "options": [
+                        "Prof. Dr. H. Abd. Rahman Rahim, S.E., M.M.",
+                        "Dr. H. Muhammad Basri, S.E., M.Si.",
+                        "Dr. Ir. H. Syamsul Rijal, M.T.",
+                        "Prof. Dr. H. Ambo Asse, M.Ag."
+                    ],
+                    "answer": "Prof. Dr. H. Abd. Rahman Rahim, S.E., M.M."
+                }
+            ]
+        },
+        {
+            "title": "NADHIR MUHAMMADIYAH",
+            "icon": "./assets/images/leader.svg",
+            "questions": [
+                {
+                    "id": 1,
+                    "question": "Siapa Ketua Umum PP Muhammadiyah periode 2022-2027?",
+                    "options": [
+                        "Prof. Dr. Haedar Nashir, M.Si.",
+                        "Dr. H. Abdul Mu'ti, M.Ed.",
+                        "Prof. Dr. Syafiq Mughni, M.A.",
+                        "Dr. H. Yunahar Ilyas, Lc., M.Ag."
+                    ],
+                    "answer": "Prof. Dr. Haedar Nashir, M.Si."
+                },
+                {
+                    "id": 2,
+                    "question": "Siapa nama pendiri 'Aisyiyah sebagai organisasi otonom Muhammadiyah?",
+                    "options": [
+                        "Nyai Ahmad Dahlan",
+                        "Nyai Walidah",
+                        "Nyai Siti Walidah",
+                        "Nyai Hajjah Dahlan"
+                    ],
+                    "answer": "Nyai Siti Walidah"
+                },
+                {
+                    "id": 3,
+                    "question": "Berapa jumlah Majelis Pimpinan Pusat (MPP) di Muhammadiyah?",
+                    "options": [
+                        "10 Majelis",
+                        "12 Majelis",
+                        "14 Majelis",
+                        "16 Majelis"
+                    ],
+                    "answer": "14 Majelis"
+                },
+                {
+                    "id": 4,
+                    "question": "Apa nama lembaga dakwah khusus pemuda di Muhammadiyah?",
+                    "options": [
+                        "Pemuda Muhammadiyah",
+                        "Remaja Muhammadiyah",
+                        "Generasi Muda Muhammadiyah",
+                        "Dewan Dakwah Pemuda Muhammadiyah"
+                    ],
+                    "answer": "Pemuda Muhammadiyah"
+                },
+                {
+                    "id": 5,
+                    "question": "Siapa tokoh Muhammadiyah yang dikenal sebagai Bapak Pendidikan Nasional?",
+                    "options": [
+                        "KH Ahmad Dahlan",
+                        "Ki Hajar Dewantara",
+                        "Buya Hamka",
+                        "KH AR Fachruddin"
+                    ],
+                    "answer": "KH Ahmad Dahlan"
+                }
+            ]
+        },
+        {
+            "title": "AMAL USAHA MUHAMMADIYAH",
+            "icon": "./assets/images/care.svg",
+            "questions": [
+                {
+                    "id": 1,
+                    "question": "Berapa jumlah rumah sakit yang dimiliki Muhammadiyah di seluruh Indonesia?",
+                    "options": [
+                        "Lebih dari 50",
+                        "Lebih dari 100",
+                        "Lebih dari 150",
+                        "Lebih dari 200"
+                    ],
+                    "answer": "Lebih dari 100"
+                },
+                {
+                    "id": 2,
+                    "question": "Apa nama perguruan tinggi Muhammadiyah pertama di Indonesia?",
+                    "options": [
+                        "Universitas Muhammadiyah Surakarta",
+                        "Universitas Muhammadiyah Yogyakarta",
+                        "Universitas Muhammadiyah Malang",
+                        "Universitas Muhammadiyah Jakarta"
+                    ],
+                    "answer": "Universitas Muhammadiyah Yogyakarta"
+                },
+                {
+                    "id": 3,
+                    "question": "Di bidang apa saja amal usaha Muhammadiyah?",
+                    "options": [
+                        "Pendidikan dan Kesehatan",
+                        "Ekonomi dan Sosial",
+                        "Dakwah dan Kebudayaan",
+                        "Semua jawaban benar"
+                    ],
+                    "answer": "Semua jawaban benar"
+                },
+                {
+                    "id": 4,
+                    "question": "Apa nama lembaga zakat Muhammadiyah?",
+                    "options": [
+                        "Baitul Mal Muhammadiyah",
+                        "LazisMu",
+                        "Badan Zakat Muhammadiyah",
+                        "Amil Zakat Muhammadiyah"
+                    ],
+                    "answer": "LazisMu"
+                },
+                {
+                    "id": 5,
+                    "question": "Berapa jumlah sekolah dasar Muhammadiyah di Indonesia?",
+                    "options": [
+                        "Lebih dari 1.000",
+                        "Lebih dari 2.000",
+                        "Lebih dari 3.000",
+                        "Lebih dari 4.000"
+                    ],
+                    "answer": "Lebih dari 2.000"
+                }
+            ]
+        }
+    ]
+}
