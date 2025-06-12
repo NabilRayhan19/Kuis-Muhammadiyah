@@ -3,7 +3,7 @@
 
 import { useAuth } from "@/context/authContext";
 
-export function isAuthenticated() {
+export function IsAuthenticated() {
     const { user, loading } = useAuth();
     return !loading && user !== null;
 
