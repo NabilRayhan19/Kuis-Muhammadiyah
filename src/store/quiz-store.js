@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
+import { supabase } from "@/utils/supabase";
 
 const API_URL =
     process.env.NODE_ENV === "production"
@@ -16,9 +17,13 @@ export const useQuestionStore = create(
                 selectedQuizz: null,
                 currentQuestion: 0,
                 hasCompleteAll: false,
+                isSavingScore: false,
+                scoreError: null,
+
                 selectQuizz: (quizz) => {
                     set({ selectedQuizz: quizz, questions: quizz.questions });
                 },
+
                 fetchQuizzes: async () => {
                     try {
                         const res = await fetch(`${API_URL}/data.json`);
@@ -48,12 +53,50 @@ export const useQuestionStore = create(
                     // actualizamos el estado
                     set({ questions: newQuestions }, false);
                 },
-                onCompleteQuestions: () => {
-                    const { questions } = get();
+
+                onCompleteQuestions: async () => {
+                    const { questions, selectedQuizz } = get();
                     const score = questions.filter((q) => q.isCorrectUserAnswer).length;
 
-                    set({ hasCompleteAll: true, currentQuestion: 0, score });
+                    set({
+                        hasCompleteAll: true,
+                        currentQuestion: 0,
+                        score,
+                        isSavingScore: true,
+                        scoreError: null
+                    });
+
+                    // Simpan skor ke Supabase
+                    try {
+                        const { data: userData } = await supabase.auth.getUser();
+                        if (userData?.user?.id) {
+                            // Coba update jika sudah ada, insert jika belum
+                            const { data, error } = await supabase
+                                .from('quiz_scores')
+                                .upsert({
+                                    user_id: userData.user.id,
+                                    quiz_id: selectedQuizz.id,
+                                    quiz_title: selectedQuizz.title,
+                                    score: score,
+                                    max_score: questions.length,
+                                    completed_at: new Date().toISOString()
+                                }, {
+                                    onConflict: 'user_id,quiz_id',
+                                    ignoreDuplicates: false
+                                });
+
+                            if (error) throw error;
+                            set({ isSavingScore: false });
+                        }
+                    } catch (error) {
+                        console.error("Error saving score:", error);
+                        set({
+                            scoreError: "Gagal menyimpan skor ke database",
+                            isSavingScore: false
+                        });
+                    }
                 },
+
                 goNextQuestion: () => {
                     const { currentQuestion, questions } = get();
                     const nextQuestion = currentQuestion + 1;
@@ -78,6 +121,7 @@ export const useQuestionStore = create(
                             questions: [],
                             hasCompleteAll: false,
                             selectedQuizz: null,
+                            scoreError: null
                         },
                         false
                     );

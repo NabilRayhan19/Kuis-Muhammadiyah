@@ -4,8 +4,9 @@ import { useQuestionStore } from "@/store/quiz-store";
 import Image from "next/image";
 
 const Score = () => {
-    const { selectedQuizz, score } = useQuestionStore();
+    const { selectedQuizz, score, isSavingScore, scoreError } = useQuestionStore();
     if (!selectedQuizz) return null;
+
     return (
         <div className="flex flex-col gap-4 bg-[#fff] dark:bg-slate p-10 rounded-xl">
             <div className="flex gap-x-2 items-center justify-center">
@@ -26,6 +27,24 @@ const Score = () => {
                 <span className="text-dark-blue dark:text-white text-sm font-thin">
                     Out of {selectedQuizz.questions.length}
                 </span>
+
+                {isSavingScore && (
+                    <div className="text-sm text-purple">
+                        Menyimpan skor...
+                    </div>
+                )}
+
+                {scoreError && (
+                    <div className="text-sm text-red-500">
+                        {scoreError}
+                    </div>
+                )}
+
+                {!isSavingScore && !scoreError && (
+                    <div className="text-sm text-green-500">
+                        Skor berhasil disimpan
+                    </div>
+                )}
             </div>
         </div>
     );

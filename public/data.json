@@ -1,6 +1,7 @@
 {
     "quizzes": [
         {
+            "id": "quiz-sejarah",
             "title": "SEJARAH MUHAMMADIYAH",
             "icon": "./assets/images/history.svg",
             "questions": [
@@ -62,6 +63,7 @@
             ]
         },
         {
+            "id": "quiz-unismuh",
             "title": "UNIVERSITAS MUHAMMADIYAH MAKASSAR",
             "icon": "./assets/images/building.svg",
             "questions": [
@@ -123,6 +125,7 @@
             ]
         },
         {
+            "id": "quiz-nadhir",
             "title": "NADHIR MUHAMMADIYAH",
             "icon": "./assets/images/leader.svg",
             "questions": [
@@ -184,6 +187,7 @@
             ]
         },
         {
+            "id": "quiz-amal",
             "title": "AMAL USAHA MUHAMMADIYAH",
             "icon": "./assets/images/care.svg",
             "questions": [
